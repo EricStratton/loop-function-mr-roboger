@@ -2,7 +2,7 @@
 
 function beepBoop (number) {
   for(let i = 0; i <= number; i++) {
-    console.log(i)
+    return number[i];
   }
 };
 
@@ -11,5 +11,5 @@ function beepBoop (number) {
 $(document).ready(function(){
   $("form#userInput").submit(function(){
     let number = parseInt($("#input").val());
-  })
-})
+  });
+});
