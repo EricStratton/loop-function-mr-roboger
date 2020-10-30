@@ -7,9 +7,15 @@ let emptyArray = [];
 function beepBoop(userNumber) {
   for (let i = 0; i <= userNumber; i++) {
     emptyArray.push(i);
-  }
-  
-    return [userNumber];
+  } emptyArray.forEach(function(number) {
+    if (number.includes(1)) {
+      emptyArray.push("Beep!")
+    } else {
+      emptyArray.push("Nothing")
+    }
+
+  });
+    return userNumber;
 };
 
 
