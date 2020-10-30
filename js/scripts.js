@@ -6,11 +6,13 @@
 //   }
 // };
 
+let emptyArray = [];
 
 function beepBoop(userNumber) {
-  for (let index = userNumber; index > 0; index--) {
-  } console.log(index);
-  return [];
+  for (let i = 0; i <= userNumber; i++) {
+    emptyArray.push(i);
+  } 
+  return [userNumber];
 };
 
 
@@ -24,6 +26,8 @@ $(document).ready(function() {
     let userNumber = parseInt($("#input").val());
  
     const result = beepBoop(userNumber);
+    
+    
 
     $(".results").text(result);
   });
