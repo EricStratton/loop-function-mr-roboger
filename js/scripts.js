@@ -7,12 +7,15 @@
 // };
 
 let emptyArray = [];
+const targetArray = [1, 2, 3]
+
 
 function beepBoop(userNumber) {
   for (let i = 0; i <= userNumber; i++) {
     emptyArray.push(i);
-  } 
-  return [userNumber];
+  }
+  
+    return [userNumber];
 };
 
 
@@ -28,7 +31,6 @@ $(document).ready(function() {
     const result = beepBoop(userNumber);
     
     $("#print").text(emptyArray);
-    
   });
 });
 
