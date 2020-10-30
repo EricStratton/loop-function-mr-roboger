@@ -24,10 +24,11 @@ $(document).ready(function() {
     event.preventDefault();
 
     let userNumber = parseInt($("#input").val());
- 
+
     const result = beepBoop(userNumber);
     
+    $("#print").text(emptyArray);
     
-    $(".results").text(emptyArray);
   });
 });
+
