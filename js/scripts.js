@@ -7,8 +7,8 @@
 // };
 
 
-function beepBoop(userNumber, result) {
-  return userNumber * 2;
+function beepBoop(userNumber) {
+  return [userNumber];
 };
 
 
@@ -16,10 +16,13 @@ function beepBoop(userNumber, result) {
 // User Interface Logic //
 
 $(document).ready(function() {
-  $("form#userInput").submit(function() {
+  $("form#userInput").submit(function(event) {
+    event.preventDefault();
+
     let userNumber = parseInt($("#input").val());
  
-    const result = beepBoop (userNumber);
+    const result = beepBoop(userNumber);
 
+    $(".results").text(result);
   });
 });
