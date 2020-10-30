@@ -28,7 +28,6 @@ $(document).ready(function() {
     const result = beepBoop(userNumber);
     
     
-
-    $(".results").text(result);
+    $(".results").text(emptyArray);
   });
 });
