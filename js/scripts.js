@@ -8,7 +8,9 @@
 
 
 function beepBoop(userNumber) {
-  return [userNumber];
+  for (let index = userNumber; index > 0; index--) {
+  } console.log(index);
+  return [];
 };
 
 
