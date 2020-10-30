@@ -7,14 +7,13 @@ let emptyArray = [];
 function beepBoop(userNumber) {
   for (let i = 0; i <= userNumber; i++) {
     emptyArray.push(i);
-  } emptyArray.forEach(function(number) {
-    if (number.includes(1)) {
-      emptyArray.push("Beep!")
-    } else {
-      emptyArray.push("Nothing")
-    }
-
-  });
+  } // emptyArray.forEach(function(number) {
+  //   if (number.includes(1)) {
+  //     emptyArray.push("Beep!")
+  //   } else {
+  //     emptyArray.push("Nothing")
+  //   }
+  // });
     return userNumber;
 };
 
@@ -31,6 +30,6 @@ $(document).ready(function() {
     const result = beepBoop(userNumber);
     
     $("#print").text(emptyArray);
+
   });
 });
-
