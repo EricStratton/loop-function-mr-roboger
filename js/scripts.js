@@ -1,25 +1,25 @@
 // Business Logic //
 
-let emptyArray = [];
-// const targetArray = [1, 2, 3]
 
 
 function beepBoop(userNumber) {
   for (let i = 0; i <= userNumber; i++) {
-    emptyArray.push(i);
-  } // emptyArray.forEach(function(number) {
-  //   if (number.includes(1)) {
-  //     emptyArray.push("Beep!")
-  //   } else {
-  //     emptyArray.push("Nothing")
-  //   }
-  // });
+    emptyArray.push(i); 
+      if (i === 3) {
+        emptyArray[i] = " Will you be my neighbor?";
+      } else if (i === 2) {
+        emptyArray[i] = " Boop!";
+      } else if (i === 1) {
+        emptyArray[i] = " Beep!";
+      }
+        else {
+      }
+  } 
     return userNumber;
 };
 
-
-
 // User Interface Logic //
+let emptyArray = [];
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {

@@ -46,6 +46,12 @@ Test: "It will return full range of numbers from 0 up to user inputted number"
 Test: "It will replace all digits of number containing a 1 with "Beep!"
 `Expect(beepBoop(3).toEqual([0, "Beep!", 2, 3]));`
 
+Test: "It will replace all digits of number containing a 2 with "Boop!"
+`Expect(beepBoop(3).toEqual([0, "Beep!", "Boop!", 3]));`
+
+Test "It will replace all digits of a number containing a 3 with "Will you be my neighbor?"
+`Expext(beepBoop(3).toEqual([0, "Beep!", "Boop!", "Will you be my neighbor?"]));`
+
 ## Known Bugs
 
 Program is not currently functional
