@@ -13,8 +13,8 @@ function beepBoop(userNumber) {
         else {
       }
     } else {
-      console.log("That's too much!")
-      return 
+      $("#too-much").show();
+      return userNumber;
     }
   } 
     return userNumber;
