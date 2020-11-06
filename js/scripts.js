@@ -1,5 +1,6 @@
 // Business Logic //
 function beepBoop(userNumber) {
+  let emptyArray = [];
   for (let i = 0; i <= userNumber; i++) {
     emptyArray.push(i);
     if (i < 100) {
@@ -10,18 +11,16 @@ function beepBoop(userNumber) {
       } else if (i === 1) {
         emptyArray[i] = " Beep!";
       }
-        else {
-      }
     } else {
       $("#too-much").show();
-      return userNumber;
+      break;
     }
   } 
-    return userNumber;
-};
+    return emptyArray;
+}
 
 // User Interface Logic //
-let emptyArray = [];
+
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
@@ -31,7 +30,8 @@ $(document).ready(function() {
 
     const result = beepBoop(userNumber);
     
-    $("#print").text(emptyArray);
+    $("#print").text(result);
+    $("#too-much").hide();
 
   });
 });
