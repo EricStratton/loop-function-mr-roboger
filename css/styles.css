@@ -1,3 +1,10 @@
+body {
+  background-color: dimgrey;
+  color: white;
+  font-size: 1.1em;
+  font-family: monospace;
+}
+
 #print {
   display: block;
 }

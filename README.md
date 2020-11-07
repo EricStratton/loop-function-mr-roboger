@@ -54,7 +54,7 @@ Test "It will replace all digits of a number containing a 3 with "Will you be my
 
 ## Known Bugs
 
-Program is not currently functional
+There are no known bugs.
 
 ## Support & Contact Details
 

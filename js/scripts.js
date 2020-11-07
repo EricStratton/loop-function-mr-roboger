@@ -1,9 +1,10 @@
 // Business Logic //
+
 function beepBoop(userNumber) {
   let emptyArray = [];
   for (let i = 0; i <= userNumber; i++) {
     emptyArray.push(i.toString());
-    
+
     if (emptyArray[i].includes("3")) {
       emptyArray[i] = "Will you be my neighbor?"
     } else if (emptyArray[i].includes("2")) {
@@ -16,7 +17,6 @@ function beepBoop(userNumber) {
 }
 
 // User Interface Logic //
-
 
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
