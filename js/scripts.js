@@ -6,14 +6,11 @@ function beepBoop(userNumber) {
     
     if (emptyArray[i].includes("3")) {
       emptyArray[i] = "Will you be my neighbor?"
+    } else if (emptyArray[i].includes("2")) {
+      emptyArray[i] = "Boop!"
+    } else if (emptyArray[i].includes("1")) {
+      emptyArray[i] = "Beep!"
     }
-    // if (i === 3) {
-    //   emptyArray[i] = " Will you be my neighbor?";
-    // } else if (i === 2 || i % 10 === 2) {
-    //   emptyArray[i] = " Boop!";
-    // } else if (i === 1) {
-    //   emptyArray[i] = " Beep!";
-    // }
   } 
   return emptyArray;
 }
