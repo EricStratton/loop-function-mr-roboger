@@ -3,9 +3,10 @@ function beepBoop(userNumber) {
   let emptyArray = [];
   for (let i = 0; i <= userNumber; i++) {
     emptyArray.push(i.toString());
-
-
-
+    
+    if (emptyArray[i].includes("3")) {
+      emptyArray[i] = "Will you be my neighbor?"
+    }
     // if (i === 3) {
     //   emptyArray[i] = " Will you be my neighbor?";
     // } else if (i === 2 || i % 10 === 2) {
